@@ -5,10 +5,12 @@ on:
     branches: [ main ]
     paths:
       - 'android-game/**'
+      - '!android-game/**/*.md'
   pull_request:
     branches: [ main ]
     paths:
       - 'android-game/**'
+      - '!android-game/**/*.md'
   workflow_dispatch:
 
 jobs:
@@ -23,7 +25,7 @@ jobs:
       uses: actions/setup-java@v4
       with:
         distribution: 'temurin'
-        java-version: '17'
+        java-version: '17'  # JDK 17 required for Android Gradle Plugin 8.1.0
         
     - name: Grant execute permission for gradlew
       run: chmod +x android-game/gradlew

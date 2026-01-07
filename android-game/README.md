@@ -6,7 +6,7 @@ A minimal Android game built with Kotlin and Jetpack Compose.
 
 ### Option 1: Download from GitHub Actions (Recommended)
 
-1. **Visit the repository on GitHub Mobile or browser**: [Actions Tab](../../../actions/workflows/build-android-apk.yml)
+1. **Visit the repository on GitHub Mobile or browser**: [Actions Tab](../../actions/workflows/build-android-apk.yml)
 2. **Click on the latest successful workflow run** (green checkmark ✓)
 3. **Scroll down to "Artifacts"** section
 4. **Download** `reaction-test-debug` (this will download a ZIP file)
@@ -60,10 +60,6 @@ android-game/
 ```
 
 ## Building the App
-
-### Option 2: Build APK Yourself
-
-If you have Android development tools installed:
 
 ### Prerequisites
 - Android SDK (API 24 or higher)

@@ -6,7 +6,8 @@
 
 1. **On your mobile device, visit this repository**:
    - Open GitHub Mobile app or browser
-   - Navigate to: `Actions` → `Build Android APK` workflow
+   - Navigate to: `Actions` tab → Select `Build Android APK` workflow
+   - Or use this direct link: [Build Android APK Workflow](../../actions/workflows/build-android-apk.yml)
    
 2. **Download the APK**:
    - Tap on the latest successful run (green ✓)
@@ -34,7 +35,8 @@
 
 1. **Öffnen Sie dieses Repository auf Ihrem Mobilgerät**:
    - GitHub Mobile App oder Browser öffnen
-   - Navigieren zu: `Actions` → `Build Android APK` Workflow
+   - Navigieren zu: `Actions` Tab → Wählen Sie `Build Android APK` Workflow
+   - Oder verwenden Sie diesen Direktlink: [Build Android APK Workflow](../../actions/workflows/build-android-apk.yml)
    
 2. **Laden Sie die APK herunter**:
    - Tippen Sie auf den neuesten erfolgreichen Lauf (grünes ✓)
