@@ -28,7 +28,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun ReactionGame() {
-    var gameState by remember { mutableStateOf(GameState.WAITING) }
+    var gameState by remember { mutableStateOf(GameState.IDLE) }
     var reactionTime by remember { mutableStateOf(0L) }
     var bestTime by remember { mutableStateOf(Long.MAX_VALUE) }
     var startTime by remember { mutableStateOf(0L) }
