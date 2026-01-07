@@ -16,6 +16,7 @@
 *.gz
 *.iso
 *.jar
+!gradle-wrapper.jar
 *.rar
 *.tar
 *.zip
@@ -35,3 +36,11 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Android build files #
+#######################
+.gradle
+build/
+local.properties
+*.apk
+*.aab

@@ -2,6 +2,27 @@
 
 A minimal Android game built with Kotlin and Jetpack Compose.
 
+## 📱 Download APK for Mobile
+
+### Option 1: Download from GitHub Actions (Recommended)
+
+1. **Visit the repository on GitHub Mobile or browser**: [Actions Tab](../../../actions/workflows/build-android-apk.yml)
+2. **Click on the latest successful workflow run** (green checkmark ✓)
+3. **Scroll down to "Artifacts"** section
+4. **Download** `reaction-test-debug` (this will download a ZIP file)
+5. **Extract the ZIP** to get `app-debug.apk`
+6. **On your Android device**:
+   - Transfer the APK file to your phone (via USB, email, cloud storage, etc.)
+   - Go to **Settings → Security → Install from Unknown Sources** and enable it
+   - Use a file manager to locate the APK file
+   - Tap the APK file to install
+   - Tap **Install** when prompted
+7. **Launch the app** from your app drawer and enjoy!
+
+### Option 2: Build APK Yourself
+
+If you have Android development tools installed:
+
 ## Game Rules
 
 - **Background starts gray**
@@ -40,6 +61,10 @@ android-game/
 
 ## Building the App
 
+### Option 2: Build APK Yourself
+
+If you have Android development tools installed:
+
 ### Prerequisites
 - Android SDK (API 24 or higher)
 - JDK 8 or higher
@@ -49,10 +74,23 @@ android-game/
 ```bash
 cd android-game
 
-# Build the app
-./gradlew build
+# Build debug APK (for testing)
+./gradlew assembleDebug
 
-# Install on connected device/emulator
+# The APK will be located at:
+# app/build/outputs/apk/debug/app-debug.apk
+
+# Build release APK (optimized)
+./gradlew assembleRelease
+
+# The APK will be located at:
+# app/build/outputs/apk/release/app-release-unsigned.apk
+```
+
+### Install on Connected Device/Emulator
+
+```bash
+# Install debug version
 ./gradlew installDebug
 ```
 
