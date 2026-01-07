@@ -15,6 +15,24 @@ _GitHub Copilot can help you code by offering autocomplete-style suggestions rig
 
 </header>
 
+## 📱 Android App Available!
+
+This repository now includes a **Reaction Time Test** Android game! You can download and install the APK on your mobile device.
+
+### 🚀 Quick Download
+
+1. Go to the [Actions](../../actions/workflows/build-android-apk.yml) tab
+2. Click on the latest successful workflow run
+3. Download the `reaction-test-debug` artifact
+4. Extract the ZIP file to get `app-debug.apk`
+5. Transfer the APK to your Android device
+6. Enable "Install from Unknown Sources" in your Android settings
+7. Install and enjoy the game!
+
+📖 For more details about the Android game, see the [android-game README](android-game/README.md).
+
+---
+
 <!--
   <<< Author notes: Step 3 >>>
   Start this step by acknowledging the previous step.
