@@ -80,11 +80,12 @@ fun ReactionTimeGame() {
                         val reactionTime = System.currentTimeMillis() - startTime
                         displayText = buildString {
                             append("${reactionTime}ms")
-                            if (bestTime == null || reactionTime < bestTime!!) {
+                            val currentBest = bestTime
+                            if (currentBest == null || reactionTime < currentBest) {
                                 bestTime = reactionTime
                                 append("\nNew best!")
                             } else {
-                                append("\nBest: ${bestTime}ms")
+                                append("\nBest: ${currentBest}ms")
                             }
                             append("\n\nTap to try again")
                         }
